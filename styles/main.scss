@@ -1,0 +1,103 @@
+/*******************************
+    Colors and Variables
+*******************************/
+$tan: #D5966C;
+$black: #151515;
+$grey: #444444;
+$white: #FFFFFF;
+
+/*******************************
+    Reset
+*******************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*******************************
+    Base Styles
+*******************************/
+.body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.container {
+    width: min(95%, 1110px);
+    margin-inline: auto;
+}
+
+/*******************************
+    Hero  
+*******************************/
+.hero {
+    display: flex;
+    flex-direction: column;
+
+    &__context {
+        order: 2;
+    }
+
+    &__heading {
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 900;
+        font-size: 3.75rem;
+        line-height: 3.4375rem;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        line-height: 1.75rem;
+    }
+
+    &__background-left {
+        display: none;
+        background-color: $black;
+    }
+}
+
+// hero heading solution for desktop 
+
+// https://www.w3docs.com/snippets/css/how-to-apply-css-styles-to-only-the-half-of-a-word-or-character.html
+
+// h1 {
+//     text-transform: uppercase;
+//     font-family: 'Big Shoulders Display', cursive;
+//     font-weight: 900;
+//     font-size: 6rem;
+//     line-height: 5.5rem;
+//     background-image: linear-gradient(to right, $white 287px, $black 287px);
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
+
+/*******************************
+    Footer 
+*******************************/
+.footer {
+    color: $white;
+    background-color: #151515;
+}
+
+/*******************************
+    Buttons and Links  
+*******************************/
+.btn {
+    text-decoration: none;
+}
+
+/*******************************
+    Images 
+*******************************/
+.image {
+    max-width: 100%;
+
+    &--hero {
+        order: 1;
+    }
+}

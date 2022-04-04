@@ -1,0 +1,77 @@
+/*******************************
+    Colors and Variables
+*******************************/
+/*******************************
+    Reset
+*******************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/*******************************
+    Base Styles
+*******************************/
+.body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.container {
+  width: min(95%, 1110px);
+  margin-inline: auto;
+}
+
+/*******************************
+    Hero  
+*******************************/
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero__context {
+  order: 2;
+}
+.hero__heading {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  font-size: 3.75rem;
+  line-height: 3.4375rem;
+  text-transform: uppercase;
+}
+.hero__text {
+  line-height: 1.75rem;
+}
+.hero__background-left {
+  display: none;
+  background-color: #151515;
+}
+
+/*******************************
+    Footer 
+*******************************/
+.footer {
+  color: #FFFFFF;
+  background-color: #151515;
+}
+
+/*******************************
+    Buttons and Links  
+*******************************/
+.btn {
+  text-decoration: none;
+}
+
+/*******************************
+    Images 
+*******************************/
+.image {
+  max-width: 100%;
+}
+.image--hero {
+  order: 1;
+}
