@@ -8,6 +8,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }
 
@@ -15,7 +16,6 @@
     Base Styles
 *******************************/
 .body {
-  margin: 0;
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 1.125rem;
@@ -42,6 +42,7 @@
   font-size: 3.75rem;
   line-height: 3.4375rem;
   text-transform: uppercase;
+  margin: 2rem 0;
 }
 .hero__text {
   line-height: 1.75rem;
@@ -63,7 +64,39 @@
     Buttons and Links  
 *******************************/
 .btn {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: max-content;
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 3.64px;
+  background-color: #151515;
+  color: #FFFFFF;
+  transition: all 400ms;
+}
+.btn__text {
+  align-self: center;
+}
+.btn__arrow {
+  background-color: #D5966C;
+  padding: 1.2em;
+}
+.btn:hover, .btn:focus {
+  background-color: #D5966C;
+}
+.btn:hover .btn__arrow, .btn:focus .btn__arrow {
+  background-color: #151515;
+}
+.btn--location {
+  margin: 2rem 0 7.5rem 0;
+}
+.btn--location__text {
+  padding-left: 1.6em;
+  padding-right: 1.75em;
 }
 
 /*******************************

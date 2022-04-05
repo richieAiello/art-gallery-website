@@ -13,6 +13,7 @@ $white: #FFFFFF;
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
 
@@ -20,7 +21,6 @@ $white: #FFFFFF;
     Base Styles
 *******************************/
 .body {
-    margin: 0;
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     font-size: 1.125rem;
@@ -48,6 +48,7 @@ $white: #FFFFFF;
         font-size: 3.75rem;
         line-height: 3.4375rem;
         text-transform: uppercase;
+        margin: 2rem 0;
     }
 
     &__text {
@@ -88,7 +89,46 @@ $white: #FFFFFF;
     Buttons and Links  
 *******************************/
 .btn {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: max-content;
     text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: 3.64px;
+    background-color: $black;
+    color: $white;
+    transition: all 400ms;
+
+    &__text {
+        align-self: center;
+    }
+
+    &__arrow {
+        background-color: $tan;
+        padding: 1.2em;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $tan;
+
+        .btn__arrow {
+            background-color: $black;
+        }
+    }
+
+    &--location {
+        margin: 2rem 0 7.5rem 0;
+
+        &__text {
+            padding-left: 1.6em;
+            padding-right: 1.75em;
+        }
+    }
 }
 
 /*******************************
