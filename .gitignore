@@ -1,3 +1,9 @@
 node_modules/
 dist/
 .parcel-cache/
+
+*.sketch
+*.fig
+*.xd
+.DS_Store
+.prettierignore
