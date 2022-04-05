@@ -95,6 +95,7 @@ $white: #FFFFFF;
     &__text {
         font-size: inherit;
         line-height: 1.75rem;
+        max-width: 30ch;
     }
 
     &__context-top {
@@ -118,6 +119,10 @@ $white: #FFFFFF;
         color: $white;
         margin-bottom: 7.5rem;
         padding: 3rem 1.5rem;
+
+        .main__heading {
+            margin-bottom: 1.5rem;
+        }
     }
 }
 
@@ -187,25 +192,30 @@ $white: #FFFFFF;
 *******************************/
 .image {
     max-width: 100%;
+    object-fit: cover;
 
     &--hero {
         order: 1;
         max-height: 300px;
-        object-fit: cover;
-        object-position: center;
     }
 
     &--main-1 {
         order: 1;
+        max-height: 350px;
+        object-position: 0% 70%;
     }
 
     &--main-2 {
         order: 3;
+        max-height: 500px;
+        object-position: 50% 79%;
         margin-bottom: 1rem;
     }
 
     &--main-3 {
         order: 4;
+        max-height: 350px;
+        object-position: bottom;
         margin-bottom: 1rem;
     }
 }

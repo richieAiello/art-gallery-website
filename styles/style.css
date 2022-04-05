@@ -72,6 +72,7 @@
 .main__text {
   font-size: inherit;
   line-height: 1.75rem;
+  max-width: 30ch;
 }
 .main__context-top {
   order: 2;
@@ -91,6 +92,9 @@
   color: #FFFFFF;
   margin-bottom: 7.5rem;
   padding: 3rem 1.5rem;
+}
+.main__context-bottom .main__heading {
+  margin-bottom: 1.5rem;
 }
 
 /*******************************
@@ -149,21 +153,26 @@
 *******************************/
 .image {
   max-width: 100%;
+  object-fit: cover;
 }
 .image--hero {
   order: 1;
   max-height: 300px;
-  object-fit: cover;
-  object-position: center;
 }
 .image--main-1 {
   order: 1;
+  max-height: 350px;
+  object-position: 0% 70%;
 }
 .image--main-2 {
   order: 3;
+  max-height: 500px;
+  object-position: 50% 79%;
   margin-bottom: 1rem;
 }
 .image--main-3 {
   order: 4;
+  max-height: 350px;
+  object-position: bottom;
   margin-bottom: 1rem;
 }
