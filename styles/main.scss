@@ -31,8 +31,14 @@ $white: #FFFFFF;
     margin-inline: auto;
 }
 
+.heading {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 /*******************************
-    Hero  
+    Header 
 *******************************/
 .hero {
     display: flex;
@@ -43,16 +49,16 @@ $white: #FFFFFF;
     }
 
     &__heading {
-        font-family: 'Big Shoulders Display', cursive;
-        font-weight: 900;
+        color: $black;
         font-size: 3.75rem;
         line-height: 3.4375rem;
-        text-transform: uppercase;
         margin: 2rem 0;
     }
 
     &__text {
+        color: $grey;
         line-height: 1.75rem;
+        max-width: 35ch;
     }
 
     &__background-left {
@@ -65,10 +71,7 @@ $white: #FFFFFF;
 
 // https://www.w3docs.com/snippets/css/how-to-apply-css-styles-to-only-the-half-of-a-word-or-character.html
 
-// h1 {
-//     text-transform: uppercase;
-//     font-family: 'Big Shoulders Display', cursive;
-//     font-weight: 900;
+// &__heading {
 //     font-size: 6rem;
 //     line-height: 5.5rem;
 //     background-image: linear-gradient(to right, $white 287px, $black 287px);
@@ -76,6 +79,47 @@ $white: #FFFFFF;
 //     -webkit-background-clip: text;
 //     -webkit-text-fill-color: transparent;
 // }
+
+/*******************************
+    Main 
+*******************************/
+.main {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        font-size: 3.125rem;
+        line-height: 2.8125rem;
+    }
+
+    &__text {
+        font-size: inherit;
+        line-height: 1.75rem;
+    }
+
+    &__context-top {
+        order: 2;
+        color: $black;
+
+        .main__heading {
+            margin-top: 1.5625rem;
+            margin-bottom: 1.3125rem;
+        }
+
+        .main__text {
+            color: #444444;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__context-bottom {
+        order: 5;
+        background-color: $black;
+        color: $white;
+        margin-bottom: 7.5rem;
+        padding: 3rem 1.5rem;
+    }
+}
 
 /*******************************
     Footer 
@@ -129,6 +173,13 @@ $white: #FFFFFF;
             padding-right: 1.75em;
         }
     }
+
+    &--home {
+        &__text {
+            padding-left: 1.75em;
+            padding-right: 1.6em;
+        }
+    }
 }
 
 /*******************************
@@ -139,5 +190,22 @@ $white: #FFFFFF;
 
     &--hero {
         order: 1;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &--main-1 {
+        order: 1;
+    }
+
+    &--main-2 {
+        order: 3;
+        margin-bottom: 1rem;
+    }
+
+    &--main-3 {
+        order: 4;
+        margin-bottom: 1rem;
     }
 }

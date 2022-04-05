@@ -26,8 +26,14 @@
   margin-inline: auto;
 }
 
+.heading {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 /*******************************
-    Hero  
+    Header 
 *******************************/
 .hero {
   display: flex;
@@ -37,19 +43,54 @@
   order: 2;
 }
 .hero__heading {
-  font-family: "Big Shoulders Display", cursive;
-  font-weight: 900;
+  color: #151515;
   font-size: 3.75rem;
   line-height: 3.4375rem;
-  text-transform: uppercase;
   margin: 2rem 0;
 }
 .hero__text {
+  color: #444444;
   line-height: 1.75rem;
+  max-width: 35ch;
 }
 .hero__background-left {
   display: none;
   background-color: #151515;
+}
+
+/*******************************
+    Main 
+*******************************/
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main__heading {
+  font-size: 3.125rem;
+  line-height: 2.8125rem;
+}
+.main__text {
+  font-size: inherit;
+  line-height: 1.75rem;
+}
+.main__context-top {
+  order: 2;
+  color: #151515;
+}
+.main__context-top .main__heading {
+  margin-top: 1.5625rem;
+  margin-bottom: 1.3125rem;
+}
+.main__context-top .main__text {
+  color: #444444;
+  margin-bottom: 2rem;
+}
+.main__context-bottom {
+  order: 5;
+  background-color: #151515;
+  color: #FFFFFF;
+  margin-bottom: 7.5rem;
+  padding: 3rem 1.5rem;
 }
 
 /*******************************
@@ -98,6 +139,10 @@
   padding-left: 1.6em;
   padding-right: 1.75em;
 }
+.btn--home__text {
+  padding-left: 1.75em;
+  padding-right: 1.6em;
+}
 
 /*******************************
     Images 
@@ -107,4 +152,18 @@
 }
 .image--hero {
   order: 1;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.image--main-1 {
+  order: 1;
+}
+.image--main-2 {
+  order: 3;
+  margin-bottom: 1rem;
+}
+.image--main-3 {
+  order: 4;
+  margin-bottom: 1rem;
 }
