@@ -29,6 +29,18 @@ $white: #FFFFFF;
 .container {
     width: min(95%, 1110px);
     margin-inline: auto;
+
+    &--footer-home {
+        color: $white;
+        background-color: #151515;
+        padding: 3rem 2rem;
+    }
+
+    &--footer-location {
+        color: #151515;
+        background-color: #D5966C;
+        padding: 3rem 2rem;
+    }
 }
 
 .heading {
@@ -130,9 +142,6 @@ $white: #FFFFFF;
     Footer 
 *******************************/
 .footer {
-    color: $white;
-    background-color: #151515;
-    padding: 3rem 2rem;
 
     &__heading {
         font-size: 1.375rem;
@@ -158,13 +167,22 @@ $white: #FFFFFF;
         &:hover,
         &:focus {
             .footer__icon {
-                fill: #D5966C;
+                fill: $tan;
             }
+
+            .footer__location-icon {
+                fill: $white;
+            }
+
         }
     }
 
     &__icon {
         fill: $white;
+    }
+
+    &__location-icon {
+        fill: $black;
     }
 }
 

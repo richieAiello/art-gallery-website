@@ -25,6 +25,16 @@
   width: min(95%, 1110px);
   margin-inline: auto;
 }
+.container--footer-home {
+  color: #FFFFFF;
+  background-color: #151515;
+  padding: 3rem 2rem;
+}
+.container--footer-location {
+  color: #151515;
+  background-color: #D5966C;
+  padding: 3rem 2rem;
+}
 
 .heading {
   font-family: "Big Shoulders Display", cursive;
@@ -100,11 +110,6 @@
 /*******************************
     Footer 
 *******************************/
-.footer {
-  color: #FFFFFF;
-  background-color: #151515;
-  padding: 3rem 2rem;
-}
 .footer__heading {
   font-size: 1.375rem;
   line-height: 1.25rem;
@@ -125,8 +130,14 @@
 .footer__link:hover .footer__icon, .footer__link:focus .footer__icon {
   fill: #D5966C;
 }
+.footer__link:hover .footer__location-icon, .footer__link:focus .footer__location-icon {
+  fill: #FFFFFF;
+}
 .footer__icon {
   fill: #FFFFFF;
+}
+.footer__location-icon {
+  fill: #151515;
 }
 
 /*******************************
