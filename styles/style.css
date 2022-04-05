@@ -103,6 +103,28 @@
 .footer {
   color: #FFFFFF;
   background-color: #151515;
+  padding: 3rem 2rem;
+}
+.footer__heading {
+  font-size: 1.375rem;
+  line-height: 1.25rem;
+}
+.footer__text {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  max-width: 100px;
+}
+.footer__link:hover .footer__icon, .footer__link:focus .footer__icon {
+  fill: #D5966C;
+}
+.footer__icon {
+  fill: #FFFFFF;
 }
 
 /*******************************
