@@ -142,6 +142,8 @@ $white: #FFFFFF;
     &__text {
         font-size: 1rem;
         line-height: 1.625rem;
+        margin: 2.375rem 0;
+        max-width: 31ch;
     }
 
     &__list {
@@ -150,7 +152,6 @@ $white: #FFFFFF;
         align-items: center;
         list-style: none;
         max-width: 100px;
-        // background-color: #D5966C;
     }
 
     &__link {
