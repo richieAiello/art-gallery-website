@@ -18,5 +18,8 @@
   "devDependencies": {
     "parcel": "^2.4.1",
     "sass": "^1.49.11"
+  },
+  "dependencies": {
+    "leaflet": "^1.7.1"
   }
 }

@@ -42,6 +42,10 @@
   text-transform: uppercase;
 }
 
+#map {
+  min-height: 550px;
+}
+
 /*******************************
     Header 
 *******************************/
