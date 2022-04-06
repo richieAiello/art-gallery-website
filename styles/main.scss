@@ -27,7 +27,7 @@ $white: #FFFFFF;
 }
 
 .container {
-    width: min(95%, 1110px);
+    width: min(100% - 2rem, 1110px);
     margin-inline: auto;
 
     &--footer-home {
@@ -51,6 +51,8 @@ $white: #FFFFFF;
 
 #map {
     min-height: 550px;
+    z-index: 1;
+    order: 1;
 }
 
 /*******************************
@@ -103,9 +105,22 @@ $white: #FFFFFF;
     display: flex;
     flex-direction: column;
 
+    &--location {
+        position: relative;
+        background-color: $black;
+        color: $white;
+        
+    }
+
     &__heading {
         font-size: 3.125rem;
         line-height: 2.8125rem;
+    }
+
+    &__sub-heading {
+        font-size: 2rem;
+        line-height: 2rem;
+        color: $tan;
     }
 
     &__text {
@@ -114,31 +129,52 @@ $white: #FFFFFF;
         max-width: 30ch;
     }
 
-    &__context-top {
-        order: 2;
-        color: $black;
-
-        .main__heading {
-            margin-top: 1.5625rem;
-            margin-bottom: 1.3125rem;
-        }
-
-        .main__text {
-            color: #444444;
-            margin-bottom: 2rem;
-        }
+    &__address {
+        margin: 1.25rem 0;
     }
 
-    &__context-bottom {
-        order: 5;
-        background-color: $black;
-        color: $white;
-        margin-bottom: 7.5rem;
-        padding: 3rem 1.5rem;
+    &__context {
 
-        .main__heading {
-            margin-bottom: 1.5rem;
+        &--top {
+            order: 2;
+            color: $black;
+    
+            .main__heading {
+                margin-top: 1.5625rem;
+                margin-bottom: 1.3125rem;
+            }
+    
+            .main__text {
+                color: #444444;
+                margin-bottom: 2rem;
+            }
         }
+
+        &--bottom {
+            order: 5;
+            background-color: $black;
+            color: $white;
+            margin-bottom: 7.5rem;
+            padding: 3rem 1.5rem;
+    
+            .main__heading {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &--location {
+            order: 2;
+            padding-top: 3rem;
+            padding-bottom: 3.5rem;
+
+            .main__heading {
+                margin-bottom: 3rem;
+            }
+        }
+
+        // &--address {
+
+        // }
     }
 }
 
@@ -236,6 +272,11 @@ $white: #FFFFFF;
     }
 
     &--home {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+
         &__text {
             padding-left: 1.75em;
             padding-right: 1.6em;
