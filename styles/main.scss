@@ -36,15 +36,7 @@ $white: #FFFFFF;
         margin-inline: auto;
     }
 
-    &--footer-home {
-        color: $white;
-        background-color: #151515;
-        padding: 3rem 2rem;
-    }
-
-    &--footer-location {
-        color: #151515;
-        background-color: #D5966C;
+    &--footer {
         padding: 3rem 2rem;
     }
 
@@ -56,6 +48,14 @@ $white: #FFFFFF;
 
         &--hero {
             width: unset;
+        }
+
+        &--footer {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            padding: 3.5rem 0;
+            width: min(100% - 5rem, 1110px);
+            margin-inline: auto;
         }
     }
 }
@@ -149,6 +149,8 @@ $white: #FFFFFF;
     flex-direction: column;
 
     &--location {
+        display: flex;
+        flex-direction: column;
         position: relative;
         background-color: $black;
         color: $white;
@@ -265,6 +267,13 @@ $white: #FFFFFF;
     Footer 
 *******************************/
 .footer {
+    color: $white;
+    background-color: #151515;
+
+    &--location {
+        color: #151515;
+        background-color: #D5966C;
+    }
 
     &__heading {
         font-size: 1.375rem;
@@ -283,7 +292,7 @@ $white: #FFFFFF;
         justify-content: space-between;
         align-items: center;
         list-style: none;
-        max-width: 100px;
+        width: 100px;
     }
 
     &__link {
@@ -296,7 +305,6 @@ $white: #FFFFFF;
             .footer__location-icon {
                 fill: $white;
             }
-
         }
     }
 
@@ -306,6 +314,19 @@ $white: #FFFFFF;
 
     &__location-icon {
         fill: $black;
+    }
+
+    @media(min-width: 765px) {
+
+        &__text {
+            margin: 0;
+            max-width: 26ch;
+        }
+
+        &__list {
+            justify-self: end;
+            align-self: flex-start;
+        }
     }
 }
 
