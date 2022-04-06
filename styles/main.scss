@@ -30,6 +30,12 @@ $white: #FFFFFF;
     width: min(100% - 2rem, 1110px);
     margin-inline: auto;
 
+    // container--hero is altered on larger screens
+    &--hero {
+        width: min(100% - 2rem, 1110px);
+        margin-inline: auto;
+    }
+
     &--footer-home {
         color: $white;
         background-color: #151515;
@@ -40,6 +46,14 @@ $white: #FFFFFF;
         color: #151515;
         background-color: #D5966C;
         padding: 3rem 2rem;
+    }
+
+    @media(min-width: 765px) {
+        &--hero {
+            width: initial;
+            margin-inline: unset;
+
+        }
     }
 }
 
@@ -61,7 +75,7 @@ $white: #FFFFFF;
 .hero {
     display: flex;
     flex-direction: column;
-
+    
     &__context {
         order: 2;
     }
@@ -82,6 +96,32 @@ $white: #FFFFFF;
     &__background-left {
         display: none;
         background-color: $black;
+    }
+
+    @media(min-width: 765px) {
+
+        & {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            position: relative;
+            margin-bottom: 7.5rem;
+        }
+
+        &__context {
+            position: absolute;
+            top: 145px;
+            left: 389px;
+        }
+
+        &__heading {
+            font-size: 4.375rem;
+            line-height: 4.0625rem;
+            margin: 0 0 3rem 0;
+        }
+
+        &__text {
+            max-width: 30ch;
+        }
     }
 }
 
@@ -282,6 +322,13 @@ $white: #FFFFFF;
             padding-right: 1.6em;
         }
     }
+
+    @media(min-width: 765px) {
+
+        &--location {
+            margin: 2rem 0 0 0;
+        }
+    }
 }
 
 /*******************************
@@ -295,6 +342,14 @@ $white: #FFFFFF;
         order: 1;
         max-height: 300px;
     }
+
+    &--hero-tablet {
+        display: none;
+    }
+
+    &--hero-desktop {
+        display: none;
+    }   
 
     &--main-1 {
         order: 1;
@@ -314,5 +369,17 @@ $white: #FFFFFF;
         max-height: 350px;
         object-position: bottom;
         margin-bottom: 1rem;
+    }
+
+    @media(min-width: 765px) {
+
+        &--hero {
+            display: none;
+        }
+
+        &--hero-tablet {
+            display: block;
+            max-width: 437px;
+        }
     }
 }
