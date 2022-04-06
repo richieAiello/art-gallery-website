@@ -194,6 +194,23 @@
     margin-bottom: 0;
     padding: 5.3125rem 1.78125rem;
   }
+  .main__context--location {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5.5rem;
+    padding-bottom: 5rem;
+  }
+  .main__context--location .main__heading {
+    font-size: 3.4375rem;
+    line-height: 3.125rem;
+    max-width: 10ch;
+  }
+  .main__context--address {
+    justify-self: flex-end;
+  }
+  .main__context--address .main__text {
+    max-width: 35ch;
+  }
 }
 
 /*******************************
