@@ -212,6 +212,14 @@
     max-width: 35ch;
   }
 }
+@media (min-width: 1190px) {
+  .main--location {
+    position: unset;
+  }
+  .main__context--location {
+    position: relative;
+  }
+}
 
 /*******************************
     Footer 
@@ -315,6 +323,16 @@
 @media (min-width: 765px) {
   .btn--location {
     margin: 2rem 0 0 0;
+  }
+  .btn--home {
+    left: 40px;
+  }
+}
+@media (min-width: 1190px) {
+  .btn--home {
+    top: unset;
+    left: 0;
+    bottom: 914px;
   }
 }
 

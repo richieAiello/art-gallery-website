@@ -282,6 +282,17 @@ $white: #FFFFFF;
             }
         }
     }
+
+    @media(min-width: 1190px) {
+
+        &--location {
+            position: unset;
+        }
+
+        &__context--location {
+            position: relative;
+        }
+    }
 }
 
 /*******************************
@@ -412,6 +423,19 @@ $white: #FFFFFF;
 
         &--location {
             margin: 2rem 0 0 0;
+        }
+
+        &--home {
+            left: 40px
+        }
+    }
+
+    @media(min-width: 1190px) {
+
+        &--home {
+            top: unset;
+            left: 0;
+            bottom: 914px;
         }
     }
 }
