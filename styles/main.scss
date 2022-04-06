@@ -240,8 +240,6 @@ $white: #FFFFFF;
 
             &--top {
                 grid-area: a;
-                // max-height: 400px;
-                // max-width: 280px;
 
                 .main__heading {
                     margin-top: 2.25rem;
@@ -258,8 +256,6 @@ $white: #FFFFFF;
                 grid-area: e;
                 margin-bottom: 0;
                 padding: 5.3125rem 1.78125rem;
-                // max-height: 396px;
-                // max-width: 280px;
             }
         }
     }
@@ -388,20 +384,28 @@ $white: #FFFFFF;
     &--hero {
         order: 1;
         max-height: 300px;
-    }
 
-    &--hero-tablet {
-        display: none;
+        &-tablet {
+            display: none;
+        }
+    
+        &-desktop {
+            display: none;
+        }   
     }
-
-    &--hero-desktop {
-        display: none;
-    }   
 
     &--main-1 {
         order: 1;
         max-height: 350px;
         object-position: 0% 70%;
+
+        &-tablet {
+            display: none;
+        }
+
+        &-desktop {
+            display: none;
+        }
     }
 
     &--main-2 {
@@ -409,6 +413,14 @@ $white: #FFFFFF;
         max-height: 500px;
         object-position: 50% 79%;
         margin-bottom: 1rem;
+
+        &-tablet {
+            display: none;
+        }
+
+        &-desktop {
+            display: none;
+        }
     }
 
     &--main-3 {
@@ -416,37 +428,59 @@ $white: #FFFFFF;
         max-height: 350px;
         object-position: bottom;
         margin-bottom: 1rem;
+
+        &-tablet {
+            display: none;
+        }
+
+        &-desktop {
+            display: none;
+        }
     }
 
     @media(min-width: 765px) {
 
         &--hero {
             display: none;
+
+            &-tablet {
+                display: initial;
+                max-width: 437px;
+            }
         }
 
-        &--hero-tablet {
-            display: block;
-            max-width: 437px;
+        &--main-1-tablet,
+        &--main-2-tablet,
+        &--main-3-tablet {
+            display: initial;
+            max-height: 100%;
+            min-width: 100%;
         }
-
+        
         &--main-1 {
-            grid-area: b;
-            min-height: 100%;
-            // max-width: 398px;
+            display: none;
+
+            &-tablet {
+                grid-area: b;
+            }
         }
 
         &--main-2 {
-            grid-area: c;
-            margin-bottom: 0;
-            min-height: 100%;
-            // max-width: 398px;
+            display: none;
+
+            &-tablet {
+                grid-area: c;
+                object-fit: cover;
+                object-position: 0% 100%;
+            }
         }
 
         &--main-3 {
-            grid-area: d;
-            margin-bottom: 0;
-            min-height: 100%;
-            // max-width: 280px;
+            display: none;
+
+            &-tablet {
+                grid-area: d;
+            }
         }
     }
 }
