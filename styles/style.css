@@ -19,6 +19,14 @@
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   font-size: 1.125rem;
+  min-height: 100vh;
+}
+.body--flex {
+  display: flex;
+  flex-direction: column;
+}
+.body--grid {
+  display: grid;
 }
 
 .container {
@@ -147,13 +155,16 @@
 /*******************************
     Main 
 *******************************/
-.main {
-  display: flex;
-  flex-direction: column;
-}
+.main,
 .main--location {
   display: flex;
   flex-direction: column;
+}
+
+.main {
+  margin-block: auto;
+}
+.main--location {
   position: relative;
   background-color: #151515;
   color: #FFFFFF;
@@ -214,7 +225,6 @@
     row-gap: 11px;
     column-gap: 11px;
     grid-template-areas: "a b b" "c c d" "c c e";
-    margin-bottom: 7.5rem;
   }
   .main__context--top {
     grid-area: a;
@@ -255,6 +265,11 @@
   }
   .main__context--location {
     position: relative;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    margin-block: auto;
   }
 }
 
@@ -299,6 +314,9 @@
   fill: #151515;
 }
 @media (min-width: 765px) {
+  .footer {
+    margin-top: 7.5rem;
+  }
   .footer__text {
     margin: 0;
     max-width: 26ch;
@@ -306,6 +324,11 @@
   .footer__list {
     justify-self: end;
     align-self: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    margin-top: 11.25rem;
   }
 }
 
@@ -436,7 +459,7 @@
   }
   .image--hero-tablet {
     display: initial;
-    max-width: 437px;
+    max-height: 700px;
   }
   .image--main-1-tablet, .image--main-2-tablet, .image--main-3-tablet {
     display: initial;
@@ -454,7 +477,6 @@
   }
   .image--main-2-tablet {
     grid-area: c;
-    object-fit: cover;
     object-position: 0% 100%;
   }
   .image--main-3 {

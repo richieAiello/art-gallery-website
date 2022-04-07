@@ -24,6 +24,21 @@ $white: #FFFFFF;
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
     font-size: 1.125rem;
+    
+    // Allows body--flex and body--grid to function properly
+    // https://moderncss.dev/
+    min-height: 100vh;
+    
+    // Keeps main centered and footer at bottom on zoom out for index.html
+    &--flex {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    // Eliminates whitespace on zoom out for location.html
+    &--grid {
+        display: grid;
+    }
 }
 
 .container {
@@ -63,7 +78,6 @@ $white: #FFFFFF;
 
         &--hero {
             width: min(100vw - 5rem, 1110px);
-            // background-color: #D5966C;
         }
     }
 }
@@ -151,6 +165,10 @@ $white: #FFFFFF;
             right: 0;
         }
 
+        // hero heading solution for desktop 
+        // reference
+        // https://www.w3docs.com/snippets/css/how-to-apply-css-styles-to-only-the-half-of-a-word-or-character.html
+
         &__heading {
             font-size: 6rem;
             line-height: 5.5rem;
@@ -174,33 +192,22 @@ $white: #FFFFFF;
     }
 }
 
-// hero heading solution for desktop 
-
-// https://www.w3docs.com/snippets/css/how-to-apply-css-styles-to-only-the-half-of-a-word-or-character.html
-
-// &__heading {
-//     font-size: 6rem;
-//     line-height: 5.5rem;
-//     background-image: linear-gradient(to right, $white 287px, $black 287px);
-//     background-clip: text;
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-// }
-
 /*******************************
     Main 
 *******************************/
-.main {
+.main,
+.main--location {
     display: flex;
     flex-direction: column;
+}
+
+.main {
+    margin-block: auto;
 
     &--location {
-        display: flex;
-        flex-direction: column;
         position: relative;
         background-color: $black;
         color: $white;
-        
     }
 
     &__heading {
@@ -281,7 +288,6 @@ $white: #FFFFFF;
                 "a b b"
                 "c c d"
                 "c c e";
-            margin-bottom: 7.5rem;
         }
 
         &__context {
@@ -339,11 +345,18 @@ $white: #FFFFFF;
             position: relative;
         }
     }
+
+    @media(min-width: 1200px) {
+        
+        & {
+            margin-block: auto;
+        }
+    }
 }
 
 /*******************************
     Footer 
-*******************************/
+*******************************/   
 .footer {
     color: $white;
     background-color: #151515;
@@ -396,6 +409,10 @@ $white: #FFFFFF;
 
     @media(min-width: 765px) {
 
+        & {
+            margin-top: 7.5rem;
+        }
+
         &__text {
             margin: 0;
             max-width: 26ch;
@@ -404,6 +421,13 @@ $white: #FFFFFF;
         &__list {
             justify-self: end;
             align-self: flex-start;
+        }
+    }
+
+    @media(min-width: 1200px) {
+
+        & {
+            margin-top: 11.25rem;
         }
     }
 }
@@ -566,7 +590,7 @@ $white: #FFFFFF;
 
             &-tablet {
                 display: initial;
-                max-width: 437px;
+                max-height: 700px;
             }
         }
 
@@ -591,7 +615,6 @@ $white: #FFFFFF;
 
             &-tablet {
                 grid-area: c;
-                object-fit: cover;
                 object-position: 0% 100%;
             }
         }
