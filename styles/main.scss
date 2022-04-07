@@ -96,6 +96,14 @@ $white: #FFFFFF;
     min-height: 550px;
     z-index: 1;
     order: 1;
+    transition: all 400ms;
+
+    @media(min-width: 765px) {
+
+        & {
+            min-height: 600px;
+        }
+    }
 }
 
 /*******************************
@@ -571,7 +579,7 @@ $white: #FFFFFF;
         &--home {
             top: unset;
             left: 0;
-            bottom: 1026px;
+            bottom: 1076px;
         }
 
         &--location {
