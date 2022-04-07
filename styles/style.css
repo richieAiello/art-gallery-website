@@ -262,20 +262,15 @@
     max-width: 35ch;
   }
 }
-@media (min-width: 1190px) {
-  .main--location {
-    position: unset;
-  }
-  .main__context--location {
-    position: relative;
-  }
-}
 @media (min-width: 1200px) {
   .main {
     grid-template-columns: 445px 190px 445px;
     grid-template-rows: 400px 313px 377px;
     row-gap: 30px;
     column-gap: 30px;
+  }
+  .main__address {
+    margin: 1.5rem 0 2rem 0;
   }
   .main__context--top .main__heading, .main__context--bottom .main__heading {
     font-size: 3.75rem;
@@ -294,6 +289,24 @@
   }
   .main__context--bottom {
     padding: 4.0625rem 2.9375rem 4rem 3rem;
+  }
+  .main__context--location {
+    position: relative;
+    padding-top: 6.5rem;
+    padding-bottom: 8rem;
+  }
+  .main__context--location .main__heading {
+    font-size: 4.375rem;
+    line-height: 4.375rem;
+  }
+  .main__context--address .main__sub-heading {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+  .main__context--address .main__text {
+    font-size: 1.375rem;
+    line-height: 2rem;
+    max-width: 37ch;
   }
 }
 
@@ -421,14 +434,12 @@
     left: 40px;
   }
 }
-@media (min-width: 1190px) {
+@media (min-width: 1200px) {
   .btn--home {
     top: unset;
     left: 0;
-    bottom: 914px;
+    bottom: 1026px;
   }
-}
-@media (min-width: 1200px) {
   .btn--location {
     margin: 4rem 0 0 0;
   }
