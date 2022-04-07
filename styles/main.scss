@@ -79,6 +79,10 @@ $white: #FFFFFF;
         &--hero {
             width: min(100vw - 5rem, 1110px);
         }
+
+        &--footer {
+            padding: 5rem 0;
+        }
     }
 }
 
@@ -469,8 +473,8 @@ $white: #FFFFFF;
         }
 
         &__heading {
-            font-size: 2.25rem;
-            line-height: 2.25rem;
+            font-size: 2rem;
+            line-height: 2rem;
         }
 
         &__text {
