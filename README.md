@@ -17,7 +17,7 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 ### Links
 
 - [Art Gallery Live URL](https://richieaiello.github.io/art-gallery-website/)
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-art-gallery-website-built-with-scss-bem-and-leaflet-r1aIP-Cmc)
 
 ## My process
 
