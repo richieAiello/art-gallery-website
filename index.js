@@ -1,4 +1,4 @@
-// Implements a map from leaflet.js
+// Implements a map with leaflet.js
 
 const map = L.map('map').setView([41.481320298128196, -71.31035694851494], 15);
 

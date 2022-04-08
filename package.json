@@ -2,11 +2,8 @@
   "name": "art-gallery-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "source": [
-    "index.html",
-    "location.html"
-  ],
+  "source": "index.html",
+    
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
