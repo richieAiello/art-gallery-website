@@ -10,6 +10,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scrollbar-color: #151515 #FFFFFF;
+  scrollbar-width: thin;
 }
 
 /*******************************
@@ -27,6 +29,23 @@
 }
 .body--grid {
   display: grid;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #151515;
+  border-radius: 100vw;
+  border: 0.25em solid #FFFFFF;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(21, 21, 21, 0.85);
 }
 
 .container {

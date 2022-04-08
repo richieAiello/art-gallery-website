@@ -16,7 +16,7 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 
 ### Links
 
-- [Art Gallery Live URL](https://richieaiello-art-gallery-website.netlify.app/)
+- [Art Gallery Live URL](https://richieaiello.github.io/art-gallery-website/)
 - [Solution URL](https://your-solution-url.com)
 
 ## My process
