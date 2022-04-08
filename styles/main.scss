@@ -26,7 +26,6 @@ $white: #FFFFFF;
     font-size: 1.125rem;
     
     // Allows body--flex and body--grid to function properly
-    // https://moderncss.dev/
     min-height: 100vh;
     
     // Keeps main centered and footer at bottom on zoom out for index.html
@@ -177,10 +176,6 @@ $white: #FFFFFF;
             right: 0;
         }
 
-        // hero heading solution for desktop 
-        // reference
-        // https://www.w3docs.com/snippets/css/how-to-apply-css-styles-to-only-the-half-of-a-word-or-character.html
-
         &__heading {
             font-size: 6rem;
             line-height: 5.5rem;
@@ -281,10 +276,6 @@ $white: #FFFFFF;
                 margin-bottom: 3rem;
             }
         }
-
-        // &--address {
-
-        // }
     }
 
     @media(min-width: 765px) {
