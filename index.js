@@ -12,7 +12,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     }).addTo(map);
     
 const myIcon = L.icon({
-    iconUrl: 'icon-location.svg',
+    iconUrl: './assets/icon-location.svg',
     iconAnchor: [35, 85]
 });    
 

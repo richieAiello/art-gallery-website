@@ -29,7 +29,6 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Parcel](https://parceljs.org/) - Zero configuration build tool
 - [Leaflet](https://leafletjs.com/) - JS library for mobile-friendly interactive maps
 - [Mapbox](https://www.mapbox.com/) - Mapbox custom dark theme
 

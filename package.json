@@ -1,20 +1,11 @@
 {
   "name": "art-gallery-website",
   "version": "1.0.0",
-  "description": "",
-  "browserslist": "defaults",
-  "source": ["index.html", "location.html"],
-    
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
     "compile": "sass --watch --no-source-map styles/main.scss styles/style.css"
   },
-  "keywords": [],
-  "author": "", 
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.4.1",
     "sass": "^1.49.11"
   },
   "dependencies": {
