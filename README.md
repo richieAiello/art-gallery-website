@@ -34,13 +34,14 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 
 ### What I learned
 
-First time working with the leaflet js library and Mapbox themes. An article from w3docs(linked below) guided me in styling the home page's main heading with two solid colors at a specific break point within the heading. I gained valuable CSS Grid experience through building this frontend mentor challenge.
+First time working with the leaflet js library and Mapbox themes. An article from w3docs(linked below) guided me in styling the home page's main heading with two solid colors at a specific break point within the heading. I improved on SVG accessibility by reading an article from CSS-TRICKS(linked below). I also gained valuable CSS Grid experience through building this frontend mentor challenge.
 
 ### Useful resources
 
 - [Kevin Powell](https://www.kevinpowell.co/) - I learned most of what I know about CSS and HTML through Kevin Powell. Great resource for beginners and anyone looking to up their development skills.
 - [Learn JavaScript by Jad Joubran](https://learnjavascript.online/) - My favorite course for learning JavaScript.
 - [w3docs](https://www.w3docs.com/snippets/css/how-to-apply-css-styles-to-only-the-half-of-a-word-or-character.html) - A great reference article for styling the home page's heading on desktop.
+- [CSS-TRICKS Accessible SVGs](https://css-tricks.com/accessible-svgs/) - Accessible inline SVGs.
 - [ModernCSS](https://moderncss.dev/) - A wonderful site for learning higher quality Modern CSS.
 
 ## Author
