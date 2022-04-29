@@ -16,7 +16,7 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 
 ### Links
 
-- [Art Gallery Live URL](https://richieaiello.github.io/art-gallery-website/)
+- [Art Gallery Live URL](https://art-gallery-website-richieaiello.netlify.app/index.html)
 - [Solution URL](https://www.frontendmentor.io/solutions/responsive-art-gallery-website-built-with-scss-bem-and-leaflet-r1aIP-Cmc)
 
 ## My process
@@ -24,11 +24,13 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 ### Built with
 
 - Semantic HTML5 markup
-- Sassy CSS(SCSS)
+- [SCSS](https://github.com/sass/dart-sass)
 - BEM naming convention
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Javascript
+- [Parcel](https://parceljs.org/) - Build Tool
 - [Leaflet](https://leafletjs.com/) - JS library for mobile-friendly interactive maps
 - [Mapbox](https://www.mapbox.com/) - Mapbox custom dark theme
 
