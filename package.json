@@ -1,14 +1,26 @@
 {
   "name": "art-gallery-website",
   "version": "1.0.0",
+  "description": "Frontend mentor junior level challenge.",
+  "source": "src/index.html",
   "scripts": {
-    "compile": "sass --watch --no-source-map styles/main.scss styles/style.css"
+    "dev": "parcel",
+    "build": "parcel build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richieAiello/art-gallery-website.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.49.11"
+  "bugs": {
+    "url": "https://github.com/richieAiello/art-gallery-website/issues"
   },
-  "dependencies": {
-    "leaflet": "^1.7.1"
+  "homepage": "https://github.com/richieAiello/art-gallery-website#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0",
+    "sass": "^1.51.0"
   }
 }
